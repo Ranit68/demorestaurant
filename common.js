@@ -1,10 +1,8 @@
-// Load Navbar
+
 fetch("navbar.html")
   .then(res => res.text())
   .then(html => {
     document.getElementById("navbar").innerHTML = html;
-
-    // ✅ Now elements exist
     const hamburger = document.getElementById("hamburger");
     const links = document.querySelector(".nav-links");
 
@@ -14,8 +12,6 @@ fetch("navbar.html")
       });
     }
   });
-
-// Load Footer
 fetch("footer.html")
   .then(res => res.text())
   .then(html => {
